@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './Section';
+import { Code2 } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
@@ -26,7 +27,7 @@ const Skills = () => {
   ];
 
   return (
-    <Section id="skills" title="Skills">
+    <Section id="skills" title="Skills" icon={Code2}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {skillCategories.map((category, index) => (
           <div key={index} className="glass-card p-6 hover-card">

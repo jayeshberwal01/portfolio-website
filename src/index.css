@@ -13,6 +13,11 @@
   --font-sans: 'Inter', system-ui, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* Account for fixed navbar */
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);

@@ -1,9 +1,10 @@
 import React from 'react';
 import Section from './Section';
+import { Target } from 'lucide-react';
 
 const Training = () => {
   return (
-    <Section id="training" title="Training">
+    <Section id="training" title="Training" icon={Target}>
       <div className="glass-card p-6 md:p-8 hover-card">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4 gap-2">
           <div>

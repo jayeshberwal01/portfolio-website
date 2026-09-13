@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './Section';
+import { GraduationCap } from 'lucide-react';
 
 const Education = () => {
   const education = [
@@ -27,7 +28,7 @@ const Education = () => {
   ];
 
   return (
-    <Section id="education" title="Education">
+    <Section id="education" title="Education" icon={GraduationCap}>
       <div className="space-y-6">
         {education.map((edu, index) => (
           <div key={index} className="glass-card p-6 relative overflow-hidden group">

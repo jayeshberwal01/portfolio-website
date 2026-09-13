@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from './Section';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Briefcase } from 'lucide-react';
 
 const GithubIcon = ({ size = 24, className = "" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -39,7 +39,7 @@ const Projects = () => {
   ];
 
   return (
-    <Section id="projects" title="Projects">
+    <Section id="projects" title="Projects" icon={Briefcase}>
       <div className="space-y-8">
         {projects.map((project, index) => (
           <div key={index} className="glass-card p-6 md:p-8 hover-card">

@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from './Section';
+import { Award } from 'lucide-react';
 
 const Certifications = () => {
   const certifications = [
@@ -31,7 +32,7 @@ const Certifications = () => {
   ];
 
   return (
-    <Section id="certificates" title="Certificates & Achievements">
+    <Section id="certificates" title="Certificates & Achievements" icon={Award}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {certifications.map((cert, index) => (
           <div key={index} className="glass-card p-5 hover-card flex flex-col justify-between h-full">
