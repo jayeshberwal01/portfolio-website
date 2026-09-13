@@ -4,40 +4,42 @@ import { User, Download } from 'lucide-react';
 const About = () => {
   return (
     <section id="about" className="py-12 md:py-16">
-      <div className="flex flex-col-reverse md:flex-row gap-12 items-center mb-12">
-        <div className="flex-1">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">Jayesh Berwal</h1>
-          <p className="text-xl md:text-2xl text-gray-400 font-medium mb-6">
-            Computer Science & Engineering Student
-          </p>
-          <div className="flex flex-wrap gap-3 mb-8">
-            <span className="px-3 py-1 bg-cyber/10 text-cyber border border-cyber/20 rounded-full text-sm font-medium">Cybersecurity</span>
-            <span className="px-3 py-1 bg-cyber/10 text-cyber border border-cyber/20 rounded-full text-sm font-medium">Web & API Security</span>
-            <span className="px-3 py-1 bg-cyber/10 text-cyber border border-cyber/20 rounded-full text-sm font-medium">Penetration Testing</span>
-          </div>
-          <p className="text-lg text-gray-300 leading-relaxed max-w-3xl mb-8">
-            I'm a Computer Science and Engineering student at Lovely Professional University with a strong interest in cybersecurity, web and API security, penetration testing, vulnerability assessment, and software development.
-          </p>
-          <a 
-            href="/cv.pdf" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-cyber/10 hover:bg-cyber/20 text-cyber border border-cyber/30 font-medium py-3 px-6 rounded-lg transition-colors"
-          >
-            <Download size={18} />
-            View CV
-          </a>
-        </div>
-        
-        <div className="w-48 h-48 md:w-64 md:h-64 flex-shrink-0">
-          <div className="w-full h-full rounded-2xl overflow-hidden border-2 border-cyber/30 shadow-[0_0_30px_rgba(16,185,129,0.15)] bg-secondary/50">
+      <div className="flex flex-col items-center text-center mb-20 mt-10">
+        <div className="relative w-40 h-40 md:w-48 md:h-48 mb-8">
+          <div className="absolute inset-0 rounded-full bg-cyber/30 blur-2xl"></div>
+          <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-cyber/50 shadow-[0_0_30px_rgba(16,185,129,0.3)] bg-secondary/50 z-10">
             <img 
               src="/profile.jpg" 
               alt="Jayesh Berwal" 
               className="w-full h-full object-cover"
             />
           </div>
+          <div className="absolute bottom-2 right-4 w-4 h-4 bg-cyber rounded-full border-2 border-background z-20"></div>
         </div>
+        
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary/50 border border-cardBorder mb-6">
+          <span className="text-gray-300 text-xs font-semibold tracking-wider uppercase flex items-center gap-2">
+            <span className="text-cyber">✦</span> Computer Science & Engineering Student
+          </span>
+        </div>
+
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+          Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-100 to-gray-500">Jayesh Berwal</span>
+        </h1>
+        
+        <p className="text-xl md:text-2xl text-gray-300 font-light mb-10 max-w-3xl leading-relaxed">
+          Building Secure Web Applications & API Systems
+        </p>
+
+        <a 
+          href="/cv.pdf" 
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 bg-transparent hover:bg-cyber/10 text-cyber border border-cyber/50 font-medium py-2.5 px-6 rounded-full transition-all duration-300"
+        >
+          <Download size={16} />
+          RESUME
+        </a>
       </div>
       
       <div className="glass-card p-6 md:p-8">
